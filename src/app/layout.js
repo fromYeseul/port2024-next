@@ -1,4 +1,4 @@
-
+import "@/assets/scss/style.scss";
 
 export const metadata = {
   title: "포트폴리오 사이트 만들기 Next-site",
