@@ -5,19 +5,19 @@ import Image from 'next/image';
 const Port = () => {
     return (
         <section id="port"> 
-            <div class="port__inner">
-                <h2 class="port__title">
+            <div className="port__inner">
+                <h2 className="port__title">
                     portfolio <em>포폴 작업물</em>
                 </h2>
-                <div class="port__wrap">
+                <div className="port__wrap">
                     {portText.map((port, key)=>(
-                        <article class={`port__item p${key+1}`}>
-                            <span class="num">{key+1}.</span>
-                            <a href={port.code} target="_blank" class="img">
+                        <article className={`port__item p${key+1}`}>
+                            <span className="num">{key+1}.</span>
+                            <a href={port.code} target="_blank" className="img">
                                 <Image src={port.img} alt={port.name} width={420} height={262} />
                             </a>
-                            <h3 class="title">{port.title}</h3>
-                            <p class="desc">{port.desc}</p>
+                            <h3 className="title">{port.title}</h3>
+                            <p className="desc">{port.desc}</p>
                             <a href={port.view} target="_blank" class="site">사이트 보기</a>
                         </article>
                     ))}
